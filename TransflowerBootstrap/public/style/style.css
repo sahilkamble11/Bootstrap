@@ -43,6 +43,13 @@ body {
   border-radius: 10px;
 }
 
+.card img{
+  height: 500;
+  object-fit: cover;
+}
+
+ 
+
 /* Footer */
 footer {
   background-color: var(--bs-primary);
@@ -59,6 +66,11 @@ footer {
   transform: scale(1.03);
   transition: 0.3s ease-in-out;
 }
+
+.img-hover:hover{
+   transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
 .btn-outline-primary:hover {
   background-color: var(--bs-primary);
   color: #fff;
@@ -68,6 +80,10 @@ footer {
 section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 #scrollTopBtn {
@@ -91,6 +107,7 @@ section {
   transform: translateY(-3px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
 }
+
 
 /* Remove Bootstrap blue */
 #scrollTopBtn.btn-primary {
@@ -129,7 +146,7 @@ form {
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
-
+ 
 .navbar-brand img {
   animation: bloom 2s ease-in-out infinite alternate;
 }
@@ -155,4 +172,31 @@ form {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}h1 {
+  color: #e91e63;
+  font-weight: bold;
 }
+
+.lead {
+  color: #555;
+}
+
+.card img {
+  height: 500px;
+  object-fit: cover;
+}
+.text-decoration-none{
+  color:#fff0f0ba;
+}
+
+.text-center{
+  color: #120e0eab;
+}
+#txt{
+  color: #e91e62c4;
+}
+
+.text-new{
+color: #fffcfcc3;
+}
+
