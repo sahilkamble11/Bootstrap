@@ -10,23 +10,20 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-
-  <!-- Include Navbar -->
-
-  <!-- Copy from index.html -->
-
-  
+ 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center gap-2" href="#">
       <img src="./images/transflower.png" width="40" height="60" alt="Logo">
       <span class="fw-bold d-none d-sm-inline" >
-        Transflower Learning
+        Transflower Store
       </span>
     </a>
 
@@ -34,16 +31,138 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html"><i class="bi bi-basket"></i> Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle"></i> About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
+<section class="container my-5">
+  <h2 class="text-center mb-4">Explore Our Collections</h2>
+
+  <!-- Tab Navigation -->
+  <ul class="nav nav-tabs justify-content-center" id="productTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="roses-tab" data-bs-toggle="tab" data-bs-target="#roses" type="button" role="tab">Roses</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tulips-tab" data-bs-toggle="tab" data-bs-target="#tulips" type="button" role="tab">Tulips</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="orchids-tab" data-bs-toggle="tab" data-bs-target="#orchids" type="button" role="tab">Orchids</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="sunflower-tab" data-bs-toggle="tab" data-bs-target="#sunflower" type="button" role="tab">Sunflowers</button>
+    </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content mt-4" id="productTabContent">
+    <div class="tab-pane fade show active" id="roses" role="tabpanel">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/bouquet.jpg" class="card-img-top" height="700">
+            <div class="card-body text-center">
+              <h5>Red & White Rose Bouquet</h5>
+              <p>Rs. 599</p>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-md-4">
+          <div class="card">
+            <img src="images/red rose.jpg" class="card-img-top" height="700">
+            <div class="card-body text-center">
+              <h5>Red Rose </h5>
+              <p>Rs. 599</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/white rose.jpg  " class="card-img-top" height="700">
+            <div class="card-body text-center">
+              <h5>White Rose </h5>
+              <p>Rs. 599</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/rose.jpg" class="card-img-top" height="700">
+            <div class="card-body text-center">
+              <h5>Pink Rose </h5>
+              <p>Rs. 99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="tulips" role="tabpanel">
+     <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/tulip.jpg" class="card-img-top" height="700">
+            <div class="card-body text-center">
+              <h5>Pink Tulip</h5>
+              <p>Rs. 119</p>
+            </div>
+          </div>
+        </div>
+
+         
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/white tulip.jpg" class="card-img-top" height="700">
+            <div class="card-body text-center">
+              <h5>White Tulip</h5>
+              <p>Rs. 129</p>
+            </div>
+          </div>
+        </div>
+    
+    </div>
+
+  
+    </div>
+
+    <div class="tab-pane fade" id="orchids" role="tabpanel">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/orchid.jpg" class="card-img-top" height="700">
+            <div class="card-body text-center">
+              <h5>Pink Orchid</h5>
+              <p>Rs. 299</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="sunflower" role="tabpanel">
+    <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/sunflower.jpg" class="card-img-top" height="700">
+            <div class="card-body text-center">
+              <h5>Sunflower</h5>
+              <p>Rs. 99</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+</section>
 
 
   <section class="py-5">
@@ -52,33 +171,39 @@
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card h-100">
-            <img src="images/rose.jpg" class="card-img-top" alt="Red Roses">
+            <img src="images/rose.jpg" class="card-img-top" alt="Red Roses" height="700">
             <div class="card-body text-center">
               <h5 class="card-title">Red Roses</h5>
               <p>₹499 | Elegant bouquet for special moments</p>
-              <a href="#" class="btn btn-outline-primary">Buy Now</a>
+             <a href="#" class="btn btn-primary">
+               <i class="bi bi-cart-plus"></i> Buy Now
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-up">
           <div class="card h-100">
-            <img src="images/tulip.jpg" class="card-img-top" alt="Tulip Delight">
+            <img src="images/tulip.jpg" class="card-img-top" alt="Tulip Delight" height="700">
             <div class="card-body text-center">
               <h5 class="card-title">Tulip Delight</h5>
               <p>₹399 | Fresh tulips to brighten your day</p>
-              <a href="#" class="btn btn-outline-primary">Buy Now</a>
+              <a href="#" class="btn btn-primary">
+               <i class="bi bi-cart-plus"></i> Buy Now
+              </a>
             </div>
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="card h-100">
-            <img src="images/sunflower.jpg" class="card-img-top" alt="Sunflower Joy">
+            <img src="images/sunflower.jpg" class="card-img-top" alt="Sunflower Joy" height="700">
             <div class="card-body text-center">
               <h5 class="card-title">Sunflower Joy</h5>
               <p>₹299 | Bring sunshine into your home</p>
-              <a href="#" class="btn btn-outline-primary">Buy Now</a>
+              <a href="#" class="btn btn-primary">
+               <i class="bi bi-cart-plus"></i> Buy Now
+              </a>
             </div>
           </div>
         </div>
@@ -90,9 +215,6 @@
    <!-- FOOTER -->
 <footer class="text-center py-3">
   <p>&copy; 2025 Transflower Store</p>
-  <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#contactModal">
-    Contact Us
-  </button>
 </footer>
 
 
@@ -110,5 +232,13 @@
 </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 </body>
 </html>
