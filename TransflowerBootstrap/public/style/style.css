@@ -177,6 +177,11 @@ form {
   font-weight: bold;
 }
 
+h2 {
+  color: #e91e63;
+  font-weight: bold;
+}
+
 .lead {
   color: #555;
 }
@@ -199,4 +204,51 @@ form {
 .text-new{
 color: #fffcfcc3;
 }
+/* Custom padding class */
+.d-padding {
+  padding: 0px 0px;
+}
 
+/* Search form alignment */
+.search-form {
+  max-width: 420px;
+}
+
+/* Input spacing & shape */
+.search-input {
+  margin-right: 8px;     /* replaces me-2 */
+  border-radius: 6px;
+}
+
+/* Button styling */
+.search-btn {
+  padding: 1px 18px;
+}
+
+#Categories{
+  padding: 1px 18px;
+
+} 
+#cate{
+  padding: 5px 5px;
+}
+
+.gradient-flower {
+  background: linear-gradient(
+       90deg,
+    #e34773,
+    #ecb4c3,
+    #f53c61
+
+  );
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flowerFlow 7s ease infinite;
+}
+
+@keyframes flowerFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
